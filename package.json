@@ -31,7 +31,7 @@
     "check": "npm test && npm run test:cigar && npm run build && npm run check:release"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.11.1",
+    "@axe-core/playwright": "4.13.0",
     "@playwright/test": "1.63.0",
     "vitest": "5.0.4",
     "vite": "8.3.4",
