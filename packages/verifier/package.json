@@ -1,0 +1,20 @@
+{
+  "name": "@cigar-aac/verifier",
+  "version": "0.1.0-alpha",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@cigar-aac/cpb": "*",
+    "@cigar-aac/cose": "*",
+    "@cigar-aac/cll": "*",
+    "@cigar-aac/scitt": "*",
+    "@cigar-aac/aac": "*"
+  },
+  "bin": {
+    "cigar-aac-verify": "./src/cli.js"
+  },
+  "license": "Apache-2.0"
+}

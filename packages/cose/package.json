@@ -1,0 +1,10 @@
+{
+  "name": "@cigar-aac/cose",
+  "version": "0.1.0-alpha",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "license": "Apache-2.0"
+}

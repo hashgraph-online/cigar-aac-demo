@@ -1,0 +1,15 @@
+* text=auto
+*.ttf binary
+*.png binary
+*.ico binary
+*.pdf binary
+/.claude export-ignore
+/.codex export-ignore
+/artifacts export-ignore
+/test-results export-ignore
+/playwright-report export-ignore
+/.env export-ignore
+/.env.* export-ignore
+/.env.example -export-ignore
+/.demo-setup.json export-ignore
+/CIGAR_AAC_AAIF_3_Page_Brief.pdf export-ignore

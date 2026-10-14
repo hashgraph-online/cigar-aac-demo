@@ -1,0 +1,18 @@
+{
+  "name": "@cigar-aac/server",
+  "version": "0.1.0-alpha",
+  "type": "module",
+  "main": "src/index.js",
+  "dependencies": {
+    "@cigar-aac/aac": "*",
+    "@cigar-aac/cigar": "*",
+    "@cigar-aac/cll": "*",
+    "@cigar-aac/cose": "*",
+    "@cigar-aac/cpb": "*",
+    "@cigar-aac/scitt": "*",
+    "@cigar-aac/verifier": "*",
+    "express": "^4.21.2",
+    "@hiero-ledger/sdk": "2.90.0"
+  },
+  "license": "Apache-2.0"
+}

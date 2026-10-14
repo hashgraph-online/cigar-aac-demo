@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+out/
+.venv/
+__pycache__/
+*.pyc
+artifacts/
+test-results/
+playwright-report/
+
+# Secrets. .env.example is the committed template.
+.env
+.env.local
+
+# Machine-local configuration, setup caches and background source material.
+.claude/
+.codex/
+.demo-setup.json
+.env.*
+!.env.example
+CIGAR_AAC_AAIF_3_Page_Brief.pdf
+coverage/

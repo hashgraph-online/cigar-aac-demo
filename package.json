@@ -1,0 +1,45 @@
+{
+  "name": "hol-proof-of-action",
+  "private": true,
+  "version": "0.2.0",
+  "description": "HOL Proof of action: governed context and verifiable agent evidence with CIGAR, AAC draft 5 and optional Hedera testnet witnessing.",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+  },
+  "scripts": {
+    "setup:cigar": "node scripts/setup-cigar.mjs",
+    "test:cigar": "node scripts/python.mjs -m unittest discover -s apps/server/python -p test_*.py",
+    "doctor": "node scripts/python.mjs -m cigar_sdk.local_cli doctor --json",
+    "check:hedera": "node scripts/check-hedera.mjs",
+    "test": "vitest run",
+    "test:ui": "playwright test",
+    "test:watch": "vitest",
+    "demo": "node apps/server/src/index.js",
+    "dev": "node scripts/dev.mjs",
+    "verify": "node packages/verifier/src/cli.js",
+    "build:dashboard": "npm run -w @cigar-aac/dashboard build",
+    "build": "npm run build:dashboard",
+    "start": "node scripts/start.mjs",
+    "setup": "node scripts/setup.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "package:source": "npm run check:release && node scripts/python.mjs scripts/package-source.py",
+    "check": "npm test && npm run test:cigar && npm run build && npm run check:release"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "@playwright/test": "1.63.0",
+    "vitest": "5.0.4",
+    "vite": "8.3.4",
+    "@vitejs/plugin-react": "6.1.2"
+  },
+  "license": "Apache-2.0",
+  "overrides": {
+    "ethers": "6.17.0",
+    "ws": "8.22.0"
+  }
+}

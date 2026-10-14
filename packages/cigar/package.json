@@ -1,0 +1,14 @@
+{
+  "name": "@cigar-aac/cigar",
+  "version": "0.1.0-alpha",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@cigar-aac/cpb": "*",
+    "@cigar-aac/cose": "*"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,27 @@
+HOL Proof of action
+Copyright 2026 HOL contributors
+
+This repository's original software is licensed under Apache License 2.0.
+HOL names and trademarks are not licensed for endorsement or misleading affiliation.
+This is an interoperability demonstration; references to the IETF, AAC, SCITT,
+Hedera and other projects do not imply their endorsement.
+
+Bundled font assets:
+- Roboto: Copyright 2011 The Roboto Project Authors.
+- Roboto Mono: see the original copyright in
+  apps/dashboard/src/assets/fonts/Roboto-Mono-OFL.txt.
+Both fonts retain their SIL Open Font License 1.1; the complete notices are
+included beside the font files. These font licenses are separate from Apache-2.0.
+
+The hol-cigar Python distribution and native worker are installed from PyPI,
+not vendored here. hol-cigar 0.14.0 identifies its license as Apache-2.0 and
+ships its own LICENSE and NOTICE. npm and Python dependencies retain their
+own licenses and notices; package-lock.json and requirements.txt identify them.
+
+Business records, organizations, account numbers and signing seeds in the
+scenario code are public demonstration fixtures. The fixed signing seeds are
+not production identities or credentials.
+
+Protocol specifications are linked and attributed in the documentation and
+interface. The historical discussion PDF is local background material and is
+excluded from this repository's source distribution.
