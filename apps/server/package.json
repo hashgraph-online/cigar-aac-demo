@@ -11,7 +11,7 @@
     "@cigar-aac/cpb": "*",
     "@cigar-aac/scitt": "*",
     "@cigar-aac/verifier": "*",
-    "express": "^4.21.2",
+    "express": "^5.3.0",
     "@hiero-ledger/sdk": "2.90.0"
   },
   "license": "Apache-2.0"
