@@ -121,7 +121,7 @@ export function createApp({ run = runScenario, anchor = anchorRun, config = hede
   const dist = resolve(import.meta.dirname, '../../dashboard/dist');
   if (existsSync(dist)) {
     app.use(express.static(dist));
-    app.get('*', (_req, res) => res.sendFile(resolve(dist, 'index.html')));
+    app.get('/{*splat}', (_req, res) => res.sendFile(resolve(dist, 'index.html')));
   }
   return app;
 }
